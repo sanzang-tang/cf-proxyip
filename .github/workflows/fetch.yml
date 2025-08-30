@@ -25,7 +25,7 @@ jobs:
           go-version: '^1.24.0'
 
       - name: Fetch Proxy IP list
-        run: curl https://zip.baipiao.eu.org > txt.zip
+        run: curl https://zip.cm.edu.kg > txt.zip
 
       - name: Generate list
         run: go run . -thread 64 txt.zip
